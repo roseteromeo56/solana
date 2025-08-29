@@ -4426,9 +4426,9 @@ dependencies = [
 
 [[package]]
 name = "sharded-slab"
-version = "0.1.1"
+version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "79c719719ee05df97490f80a45acfc99e5a30ce98a1e4fb67aee422745ae14e3"
+checksum = "f40ca3c46823713e0d4209592e8d6e826aa57e928f09752619fc696c499637f6"
 dependencies = [
  "lazy_static",
 ]
@@ -6411,7 +6411,7 @@ dependencies = [
  "Inflector",
  "base64 0.21.7",
  "bincode",
- "borsh 0.10.3",
+ "borsh 1.5.7",
  "bs58",
  "lazy_static",
  "log",
@@ -7563,9 +7563,9 @@ dependencies = [
 
 [[package]]
 name = "tracing-subscriber"
-version = "0.3.11"
+version = "0.3.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4bc28f93baff38037f64e6f43d34cfa1605f27a49c34e8a04c5e78b0babf2596"
+checksum = "e8189decb5ac0fa7bc8b96b7cb9b2701d60d48805aca84a238004d665fcc4008"
 dependencies = [
  "sharded-slab",
  "thread_local",
