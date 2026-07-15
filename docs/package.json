@@ -21,7 +21,7 @@
     "crowdin:upload": "npm run write-i18n && crowdin upload"
   },
   "dependencies": {
-    "@crowdin/cli": "^3.17.0",
+    "@crowdin/cli": "^3.19.4",
     "@docusaurus/core": "^3.8.0",
     "@docusaurus/plugin-google-gtag": "^3.8.0",
     "@docusaurus/preset-classic": "^3.8.0",
@@ -35,7 +35,7 @@
     "prettier": "^2.0.5",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "rehype-katex": "^4.0.0",
+    "rehype-katex": "^7.0.1",
     "remark-math": "^3.0.1"
   },
   "browserslist": {
