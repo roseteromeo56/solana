@@ -310,7 +310,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "94893f1e0c6eeab764ade8dc4c0db24caf4fe7cbbaafc0eba0a9030f447b5185"
 dependencies = [
  "num-traits",
- "rand 0.8.5",
+ "rand 0.8.7",
 ]
 
 [[package]]
@@ -543,7 +543,7 @@ dependencies = [
  "getrandom 0.2.10",
  "instant",
  "pin-project-lite",
- "rand 0.8.5",
+ "rand 0.8.7",
  "tokio",
 ]
 
@@ -737,11 +737,11 @@ dependencies = [
 
 [[package]]
 name = "borsh"
-version = "1.6.1"
+version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cfd1e3f8955a5d7de9fab72fc8373fade9fb8a703968cb200ae3dc6cf08e185a"
+checksum = "2f3f6da4992df95bbcd9af42a6c7dcb994498fc9048230405f3b36ff7cd3f145"
 dependencies = [
- "borsh-derive 1.6.1",
+ "borsh-derive 1.7.0",
  "bytes",
  "cfg_aliases",
 ]
@@ -774,9 +774,9 @@ dependencies = [
 
 [[package]]
 name = "borsh-derive"
-version = "1.6.1"
+version = "1.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bfcfdc083699101d5a7965e49925975f2f55060f94f9a05e7187be95d530ca59"
+checksum = "3ae8fb4fb5740e4b2c4884ff95f5f32f5e8479db1e8fd8eb49ddbe09eb09bb7c"
 dependencies = [
  "once_cell",
  "proc-macro-crate 3.3.0",
@@ -1521,7 +1521,6 @@ dependencies = [
  "byteorder",
  "digest 0.9.0",
  "rand_core 0.5.1",
- "serde",
  "subtle",
  "zeroize",
 ]
@@ -1538,6 +1537,7 @@ dependencies = [
  "digest 0.10.7",
  "fiat-crypto",
  "rustc_version 0.4.0",
+ "serde",
  "subtle",
  "zeroize",
 ]
@@ -3674,7 +3674,7 @@ dependencies = [
  "lazy_static",
  "percent-encoding 2.3.1",
  "pin-project",
- "rand 0.8.5",
+ "rand 0.8.7",
  "thiserror",
 ]
 
@@ -4128,7 +4128,7 @@ dependencies = [
  "bitflags 2.4.2",
  "lazy_static",
  "num-traits",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "rand_xorshift",
  "regex-syntax",
@@ -4258,7 +4258,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "141bf7dfde2fbc246bfd3fe12f2455aa24b0fbd9af535d8c86c7bd1381ff2b1a"
 dependencies = [
  "bytes",
- "rand 0.8.5",
+ "rand 0.8.7",
  "ring 0.16.20",
  "rustc-hash",
  "rustls",
@@ -4319,9 +4319,9 @@ dependencies = [
 
 [[package]]
 name = "rand"
-version = "0.8.5"
+version = "0.8.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "34af8d1a0e25924bc5b7c43c079c942339d8f0a8b57c39049bef581b46327404"
+checksum = "22f6172bdec972074665ed81ed53b71da00bfc44b65a753cfde883ec4c702a1a"
 dependencies = [
  "libc",
  "rand_chacha 0.3.1",
@@ -5256,7 +5256,7 @@ dependencies = [
  "futures 0.3.30",
  "httparse",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "sha-1 0.9.8",
 ]
 
@@ -5305,7 +5305,7 @@ version = "1.19.0"
 dependencies = [
  "clap 2.33.3",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "solana-account-decoder",
  "solana-accounts-db",
@@ -5364,7 +5364,7 @@ dependencies = [
  "ouroboros",
  "percentage",
  "qualifier_attr",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "rayon",
  "regex",
@@ -5435,7 +5435,7 @@ dependencies = [
  "clap 3.2.23",
  "crossbeam-channel",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "solana-client",
  "solana-core",
@@ -5456,7 +5456,7 @@ dependencies = [
 name = "solana-banks-client"
 version = "1.19.0"
 dependencies = [
- "borsh 1.6.1",
+ "borsh 1.7.0",
  "futures 0.3.30",
  "solana-banks-interface",
  "solana-banks-server",
@@ -5514,7 +5514,7 @@ dependencies = [
  "clap 2.33.3",
  "crossbeam-channel",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "serde_json",
  "serde_yaml 0.9.32",
@@ -5555,7 +5555,7 @@ dependencies = [
  "bv",
  "fnv",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "rustc_version 0.4.0",
  "serde",
@@ -5575,7 +5575,7 @@ dependencies = [
  "libsecp256k1",
  "log",
  "memoffset 0.9.0",
- "rand 0.8.5",
+ "rand 0.8.7",
  "scopeguard",
  "solana-measure",
  "solana-program-runtime",
@@ -5608,7 +5608,7 @@ dependencies = [
  "memmap2",
  "modular-bitfield",
  "num_enum",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "solana-logger",
  "solana-measure",
@@ -5856,7 +5856,7 @@ name = "solana-client-test"
 version = "1.19.0"
 dependencies = [
  "futures-util",
- "rand 0.8.5",
+ "rand 0.8.7",
  "serde_json",
  "solana-client",
  "solana-ledger",
@@ -5913,7 +5913,7 @@ dependencies = [
  "indexmap 2.6.0",
  "indicatif",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "rayon",
  "solana-logger",
@@ -5950,7 +5950,7 @@ dependencies = [
  "num_enum",
  "prio-graph",
  "quinn",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "raptorq",
  "rayon",
@@ -6045,7 +6045,7 @@ dependencies = [
  "crossbeam-channel",
  "itertools",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "serde",
  "solana-bench-tps",
  "solana-client",
@@ -6084,7 +6084,7 @@ version = "1.19.0"
 dependencies = [
  "assert_matches",
  "ed25519-dalek 2.0.0",
- "rand 0.8.5",
+ "rand 0.8.7",
  "solana-program-test",
  "solana-sdk",
 ]
@@ -6099,7 +6099,7 @@ dependencies = [
  "dlopen2",
  "lazy_static",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "serde",
  "solana-logger",
@@ -6254,7 +6254,7 @@ dependencies = [
  "lru",
  "num-traits",
  "num_cpus",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "rayon",
  "rustc_version 0.4.0",
@@ -6365,7 +6365,7 @@ dependencies = [
  "num_cpus",
  "num_enum",
  "prost",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "rayon",
  "reed-solomon-erasure",
@@ -6485,7 +6485,7 @@ dependencies = [
  "gag",
  "itertools",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "serial_test",
  "solana-accounts-db",
@@ -6578,7 +6578,7 @@ dependencies = [
  "gethostname",
  "lazy_static",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "reqwest",
  "serial_test",
  "solana-sdk",
@@ -6590,7 +6590,7 @@ name = "solana-net-shaper"
 version = "1.19.0"
 dependencies = [
  "clap 3.2.23",
- "rand 0.8.5",
+ "rand 0.8.7",
  "serde",
  "serde_json",
  "solana-logger",
@@ -6605,7 +6605,7 @@ dependencies = [
  "crossbeam-channel",
  "log",
  "nix 0.26.4",
- "rand 0.8.5",
+ "rand 0.8.7",
  "serde",
  "serde_derive",
  "socket2 0.5.5",
@@ -6641,14 +6641,14 @@ dependencies = [
  "bincode",
  "bv",
  "caps",
- "curve25519-dalek 3.2.1",
+ "curve25519-dalek 4.1.3",
  "dlopen2",
  "fnv",
  "lazy_static",
  "libc",
  "log",
  "nix 0.26.4",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "rayon",
  "rustc_version 0.4.0",
@@ -6672,7 +6672,7 @@ dependencies = [
  "core_affinity",
  "crossbeam-channel",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "solana-entry",
  "solana-ledger",
  "solana-logger",
@@ -6718,14 +6718,14 @@ dependencies = [
  "blake3",
  "borsh 0.10.4",
  "borsh 0.9.3",
- "borsh 1.6.1",
+ "borsh 1.7.0",
  "bs58",
  "bv",
  "bytemuck",
  "cc",
  "console_error_panic_hook",
  "console_log",
- "curve25519-dalek 3.2.1",
+ "curve25519-dalek 4.1.3",
  "getrandom 0.2.10",
  "itertools",
  "js-sys",
@@ -6739,7 +6739,7 @@ dependencies = [
  "num-derive",
  "num-traits",
  "parking_lot 0.12.1",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rustc_version 0.4.0",
  "rustversion",
  "serde",
@@ -6775,7 +6775,7 @@ dependencies = [
  "num-derive",
  "num-traits",
  "percentage",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rustc_version 0.4.0",
  "serde",
  "solana-frozen-abi",
@@ -7088,7 +7088,7 @@ dependencies = [
  "ouroboros",
  "percentage",
  "qualifier_attr",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "rayon",
  "regex",
@@ -7139,7 +7139,7 @@ version = "1.19.0"
 dependencies = [
  "bincode",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rustc_version 0.4.0",
  "solana-program",
  "solana-program-runtime",
@@ -7156,12 +7156,12 @@ dependencies = [
  "base64 0.21.7",
  "bincode",
  "bitflags 2.4.2",
- "borsh 1.6.1",
+ "borsh 1.7.0",
  "bs58",
  "bytemuck",
  "byteorder",
  "chrono",
- "curve25519-dalek 3.2.1",
+ "curve25519-dalek 4.1.3",
  "derivation-path",
  "digest 0.10.7",
  "ed25519-dalek 2.0.0",
@@ -7182,7 +7182,7 @@ dependencies = [
  "qstring",
  "qualifier_attr",
  "rand 0.7.3",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rustc_version 0.4.0",
  "rustversion",
  "serde",
@@ -7350,7 +7350,7 @@ dependencies = [
  "percentage",
  "quinn",
  "quinn-proto",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rustls",
  "solana-logger",
  "solana-metrics",
@@ -7502,7 +7502,7 @@ dependencies = [
  "bincode",
  "clap 2.33.3",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "solana-clap-utils",
  "solana-cli",
@@ -7529,7 +7529,7 @@ dependencies = [
  "Inflector",
  "base64 0.21.7",
  "bincode",
- "borsh 1.6.1",
+ "borsh 1.7.0",
  "bs58",
  "lazy_static",
  "log",
@@ -7558,7 +7558,7 @@ dependencies = [
  "log",
  "lru",
  "quinn",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rand_chacha 0.3.1",
  "rayon",
  "rustls",
@@ -7648,7 +7648,7 @@ dependencies = [
  "libloading",
  "log",
  "num_cpus",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rayon",
  "serde",
  "serde_json",
@@ -7714,7 +7714,7 @@ dependencies = [
  "crossbeam-channel",
  "itertools",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rustc_version 0.4.0",
  "serde",
  "serde_derive",
@@ -7814,7 +7814,7 @@ version = "1.19.0"
 dependencies = [
  "bytemuck",
  "criterion",
- "curve25519-dalek 3.2.1",
+ "curve25519-dalek 4.1.3",
  "num-derive",
  "num-traits",
  "solana-program-runtime",
@@ -7827,7 +7827,7 @@ name = "solana-zk-token-proof-program-tests"
 version = "1.19.0"
 dependencies = [
  "bytemuck",
- "curve25519-dalek 3.2.1",
+ "curve25519-dalek 4.1.3",
  "solana-program-runtime",
  "solana-program-test",
  "solana-sdk",
@@ -7843,14 +7843,14 @@ dependencies = [
  "bincode",
  "bytemuck",
  "byteorder",
- "curve25519-dalek 3.2.1",
+ "curve25519-dalek 4.1.3",
  "getrandom 0.1.16",
  "itertools",
  "lazy_static",
  "merlin",
  "num-derive",
  "num-traits",
- "rand 0.8.5",
+ "rand 0.8.7",
  "serde",
  "serde_json",
  "sha3 0.9.1",
@@ -7875,7 +7875,7 @@ dependencies = [
  "hash32",
  "libc",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rustc-demangle",
  "scroll",
  "thiserror",
@@ -8305,7 +8305,7 @@ dependencies = [
  "humantime",
  "opentelemetry",
  "pin-project",
- "rand 0.8.5",
+ "rand 0.8.7",
  "serde",
  "static_assertions",
  "tarpc-plugins",
@@ -8772,7 +8772,7 @@ dependencies = [
  "indexmap 1.9.3",
  "pin-project",
  "pin-project-lite",
- "rand 0.8.5",
+ "rand 0.8.7",
  "slab",
  "tokio",
  "tokio-util 0.7.1",
@@ -8874,7 +8874,7 @@ dependencies = [
  "http",
  "httparse",
  "log",
- "rand 0.8.5",
+ "rand 0.8.7",
  "rustls",
  "sha1",
  "thiserror",
