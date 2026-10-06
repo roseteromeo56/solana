@@ -7,7 +7,7 @@ function semverParseInto() {
     #MINOR
     eval $3=`echo $1 | sed -e "s#$RE#\2#"`
     #MINOR
-    eval $4=`echo $1 | sed -e "s#$RE#\3#"`
+    eval $4="`echo $1 | sed -e "s#$RE#\3#"`"
     #SPECIAL
     eval $5=`echo $1 | sed -e "s#$RE#\4#"`
 }
