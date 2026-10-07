@@ -63,9 +63,13 @@ touch target/cov/before-test
 # we always want stable coverage for them
 # Don't support odd file names in our repo ever
 if [[ -n $CI || -z $1 ]]; then
+  build_scripts=()
+  while IFS= read -r -d '' build_script; do
+    build_scripts+=("$build_script")
+  done < <(git ls-files -z :**/build.rs)
   # shellcheck disable=SC2046
   touch \
-    "$(git ls-files :**/build.rs)" \
+    "${build_scripts[@]}" \
     $(git grep -l "proc-macro.*true" :**/Cargo.toml | sed 's|Cargo.toml|src/lib.rs|')
 fi
 
