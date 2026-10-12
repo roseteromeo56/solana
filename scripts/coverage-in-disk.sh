@@ -67,10 +67,13 @@ if [[ -n $CI || -z $1 ]]; then
   while IFS= read -r -d '' build_script; do
     build_scripts+=("$build_script")
   done < <(git ls-files -z :**/build.rs)
-  # shellcheck disable=SC2046
+  proc_macro_sources=()
+  while IFS= read -r proc_macro_source; do
+    proc_macro_sources+=("$proc_macro_source")
+  done < <(git grep -l "proc-macro.*true" :**/Cargo.toml | sed 's|Cargo.toml|src/lib.rs|')
   touch \
     "${build_scripts[@]}" \
-    $(git grep -l "proc-macro.*true" :**/Cargo.toml | sed 's|Cargo.toml|src/lib.rs|')
+    "${proc_macro_sources[@]}"
 fi
 
 #shellcheck source=ci/common/limit-threads.sh
