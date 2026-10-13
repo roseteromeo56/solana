@@ -72,6 +72,10 @@ if [[ -n $CI || -z $1 ]]; then
     proc_macro_sources+=("${proc_macro_manifest%Cargo.toml}src/lib.rs")
   done < <(git grep -lz "proc-macro.*true" ':**/Cargo.toml')
   touch -- \
+  while IFS= read -r proc_macro_source; do
+    proc_macro_sources+=("$proc_macro_source")
+  done < <(git grep -l "proc-macro.*true" :**/Cargo.toml | sed 's|Cargo.toml|src/lib.rs|')
+  touch \
     "${build_scripts[@]}" \
     "${proc_macro_sources[@]}"
 fi
